@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛠️ Developer Tools
 
-## Getting Started
+A modern, responsive web application built with Next.js that provides essential developer utilities in one convenient location. Features a clean interface with dark/light theme support and intuitive search functionality.
 
-First, run the development server:
+![Developer Tools](public/icon.png)
 
+## ✨ Features
+
+- **�️ Essential Developer Tools** - A growing collection of commonly used utilities including encoding/decoding, hashing, and security tools
+- **🎨 Dark/Light Theme Support** - Toggle between themes with system preference detection
+- **🔍 Quick Search** - Fast tool search with keyboard shortcuts (⌘K / Ctrl+K)
+- **📱 Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- **⚡ Fast Performance** - Built with Next.js 15 and Turbopack for optimal speed
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- pnpm (recommended) or npm/yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
+git clone https://github.com/jobacx/dev-tools.git
+cd dev-tools
+```
+
+2. Install dependencies:
+```bash
+pnpm install
+# or
+npm install
+# or 
+yarn install
+```
+
+3. Start the development server:
+```bash
+pnpm dev
+# or
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Stacks
+- **[Next.js 15](https://nextjs.org)** - React framework with App Router
+- **[React 19](https://react.dev)** - User interface library
+- **[TypeScript](https://www.typescriptlang.org)** - Type-safe JavaScript
+- **[Tailwind CSS 4](https://tailwindcss.com)** - Utility-first CSS framework
+- **[Radix UI](https://www.radix-ui.com)** - Accessible component primitives
+- **[Lucide React](https://lucide.dev)** - Beautiful icon library
+- **[next-themes](https://github.com/pacocoursey/next-themes)** - Theme switching
 
-## Learn More
+### Development Tools
+- **[ESLint](https://eslint.org)** - Code linting
+- **[PostCSS](https://postcss.org)** - CSS processing
+- **[Turbopack](https://turbo.build/pack)** - Fast bundler and dev server
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Home page
+│   ├── api/               # API routes
+│   │   ├── bcrypt/        # Bcrypt endpoints
+│   │   └── jwt/           # JWT endpoints
+│   └── tools/             # Tool pages
+│       ├── layout.tsx     # Tools layout
+│       ├── base64/        # Base64 tool
+│       ├── bcrypt/        # Bcrypt tool
+│       └── jwt/           # JWT tool
+├── components/            # Reusable components
+│   ├── ui/                # UI component library
+│   ├── theme-provider.tsx # Theme context
+│   └── theme-toggle.tsx   # Theme switcher
+├── hooks/                 # Custom React hooks
+├── lib/                   # Utility functions
+└── types/                 # TypeScript definitions
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔧 Available Scripts
 
-## Deploy on Vercel
+- `pnpm dev` - Start development server with Turbopack
+- `pnpm build` - Build production bundle
+- `pnpm start` - Start production server  
+- `pnpm lint` - Run ESLint
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Roadmap
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Future tools and features planned:
+
+- **URL Encoder/Decoder** - Encode and decode URLs and query parameters
+- **Color Converter** - Convert between different color formats (HEX, RGB, HSL, etc.)
+- **JSON Formatter/Validator** - Format, validate, and minify JSON
+- **Hash Generator** - Generate MD5, SHA1, SHA256, and other hashes
+- **QR Code Generator** - Create QR codes for text, URLs, and data
+- **Regular Expression Tester** - Test and debug regex patterns
+- **SQL Formatter** - Format and beautify SQL queries
+- **XML/HTML Formatter** - Format and validate XML/HTML
+- **Timestamp Converter** - Convert between different timestamp formats
+- **Lorem Ipsum Generator** - Generate placeholder text
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org) team for the amazing framework
+- [Radix UI](https://www.radix-ui.com) for accessible components
+- [Tailwind CSS](https://tailwindcss.com) for utility-first styling
+- [Lucide](https://lucide.dev) for beautiful icons
+
+---
+
+<div align="center">
+
+**[🌐 Visit Live Demo](https://your-demo-url.com)** | **[📝 Report Bug](https://github.com/jobacx/dev-tools/issues)** | **[✨ Request Feature](https://github.com/jobacx/dev-tools/issues)**
+
+Made with ❤️ by [jobacx](https://github.com/jobacx)
+
+</div>
