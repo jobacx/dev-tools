@@ -52,13 +52,13 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-xl font-semibold mb-3">6. Your Rights</h2>
           <p className="text-muted-foreground">
-            Since we don't collect or store any personal data, there is no personal information 
+            Since we don&apos;t collect or store any personal data, there is no personal information 
             to access, modify, or delete. All data remains under your control on your device.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibred mb-3">7. Changes to This Policy</h2>
+          <h2 className="text-xl font-semibold mb-3">7. Changes to This Policy</h2>
           <p className="text-muted-foreground">
             We may update this privacy policy from time to time. Any changes will be posted on 
             this page with an updated revision date.
