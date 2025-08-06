@@ -8,6 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const tools = [
   {
@@ -52,11 +53,12 @@ export default function ToolsLayout({
               </Link>
             </div>
 
-            {/* Tools Dropdown */}
-            <nav className="flex items-center space-x-1">
+            {/* Tools Dropdown and Theme Toggle */}
+            <nav className="flex items-center space-x-2">
+              
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="sm" className="flex items-center gap-2">
+                  <Button variant="outline" className="flex items-center gap-2">
                     Tools
                     <ChevronDown className="h-4 w-4" />
                   </Button>
@@ -72,6 +74,7 @@ export default function ToolsLayout({
                   ))}
                 </DropdownMenuContent>
               </DropdownMenu>
+              <ThemeToggle />
             </nav>
           </div>
         </div>
