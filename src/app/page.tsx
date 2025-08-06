@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, Hash, FileText, Key } from "lucide-react";
@@ -44,7 +45,16 @@ export default function Home() {
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h1 className="text-4xl font-bold mb-4">Developer Tools</h1>
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Image 
+                  src="/icon.png" 
+                  alt="Dev Tools" 
+                  width={48} 
+                  height={48}
+                  className="rounded-lg"
+                />
+                <h1 className="text-4xl font-bold">Developer Tools</h1>
+              </div>
               <p className="text-muted-foreground text-lg">
                 Essential utilities for developers - Hash, Encode, Decode, and more
               </p>

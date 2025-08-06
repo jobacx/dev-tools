@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Dev Tools",
-  description: "Developer tools for hashing, encoding, decoding, and more",
+  description: "Developer tools for hashing, encoding, decoding, and more"
 };
 
 export default function RootLayout({

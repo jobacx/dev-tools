@@ -1,5 +1,6 @@
 import { Hash, FileText, Key, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -40,6 +41,13 @@ export default function ToolsLayout({
             {/* Title with Home Link */}
             <div className="flex items-center space-x-4">
               <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+                <Image 
+                  src="/icon.png" 
+                  alt="Dev Tools" 
+                  width={32} 
+                  height={32}
+                  className="rounded-md"
+                />
                 <h1 className="text-xl font-bold">Developer Tools</h1>
               </Link>
             </div>
