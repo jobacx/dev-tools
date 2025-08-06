@@ -54,7 +54,7 @@ yarn dev
 - **[React 19](https://react.dev)** - User interface library
 - **[TypeScript](https://www.typescriptlang.org)** - Type-safe JavaScript
 - **[Tailwind CSS 4](https://tailwindcss.com)** - Utility-first CSS framework
-- **[Radix UI](https://www.radix-ui.com)** - Accessible component primitives
+- **[Shadcn UI](https://ui.shadcn.com)** - Accessible component primitives
 - **[Lucide React](https://lucide.dev)** - Beautiful icon library
 - **[next-themes](https://github.com/pacocoursey/next-themes)** - Theme switching
 
@@ -127,7 +127,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - [Next.js](https://nextjs.org) team for the amazing framework
-- [Radix UI](https://www.radix-ui.com) for accessible components
+- [Shadcn UI](https://ui.shadcn.com) for components
 - [Tailwind CSS](https://tailwindcss.com) for utility-first styling
 - [Lucide](https://lucide.dev) for beautiful icons
 
@@ -135,7 +135,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**[🌐 Visit Live Demo](https://your-demo-url.com)** | **[📝 Report Bug](https://github.com/jobacx/dev-tools/issues)** | **[✨ Request Feature](https://github.com/jobacx/dev-tools/issues)**
+**[🌐 Visit Live Demo](https://dev-tools-jbacule.vercel.app)** | **[📝 Report Bug](https://github.com/jobacx/dev-tools/issues)** | **[✨ Request Feature](https://github.com/jobacx/dev-tools/issues)**
 
 Made with ❤️ by [jobacx](https://github.com/jobacx)
 
