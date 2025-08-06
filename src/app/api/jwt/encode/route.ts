@@ -15,14 +15,14 @@ export async function POST(request: NextRequest) {
     let parsedPayload;
     try {
       parsedPayload = typeof payload === 'string' ? JSON.parse(payload) : payload;
-    } catch (e) {
+    } catch {
       return NextResponse.json(
         { error: 'Invalid JSON payload' },
         { status: 400 }
       );
     }
 
-    const options: any = { algorithm };
+    const options: jwt.SignOptions = { algorithm: algorithm as jwt.Algorithm };
     if (expiresIn) {
       options.expiresIn = expiresIn;
     }

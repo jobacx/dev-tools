@@ -22,7 +22,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const response: any = {
+    const response: {
+      header: jwt.JwtHeader;
+      payload: string | jwt.JwtPayload | null;
+      verified: boolean;
+      verificationError?: string;
+    } = {
       header: decoded.header,
       payload: decoded.payload,
       verified: false
@@ -33,7 +38,7 @@ export async function POST(request: NextRequest) {
       try {
         jwt.verify(token, secret);
         response.verified = true;
-      } catch (verifyError) {
+      } catch {
         response.verified = false;
         response.verificationError = 'Invalid signature';
       }
