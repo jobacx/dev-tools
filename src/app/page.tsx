@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search } from "lucide-react";
 import Footer from "@/components/footer";
+import StructuredData from "@/components/structured-data";
 import { toolsConfig } from "@/lib/tools-config";
 
 export default function Home() {
@@ -18,7 +19,9 @@ export default function Home() {
   );
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <>
+      <StructuredData type="homepage" />
+      <div className="min-h-screen bg-background flex flex-col">
       <div className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-4xl mx-auto">
@@ -80,6 +83,7 @@ export default function Home() {
       </div>
 
       <Footer />
-    </div>
+      </div>
+    </>
   );
 }
