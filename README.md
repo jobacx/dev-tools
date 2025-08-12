@@ -2,8 +2,6 @@
 
 A modern, responsive web application built with Next.js that provides essential developer utilities in one convenient location. Features a clean interface with dark/light theme support and intuitive search functionality.
 
-![Developer Tools](public/icon.png)
-
 ## ✨ Features
 
 - **�️ Essential Developer Tools** - A growing collection of commonly used utilities including encoding/decoding, hashing, and security tools
@@ -122,7 +120,8 @@ Future tools and features planned:
 - [ ] **SQL Formatter** - Format and beautify SQL queries
 - [ ] **XML/HTML Formatter** - Format and validate XML/HTML
 - [x] **Timestamp Converter** - Convert between different timestamp formats
-- [ ] **Lorem Ipsum Generator** - Generate placeholder text
+- [x] **Lorem Ipsum Generator** - Generate placeholder text
+- [ ] **Markdown Preview** - 
 
 ## 🤝 Contributing
 

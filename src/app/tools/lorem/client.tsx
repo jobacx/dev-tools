@@ -307,7 +307,7 @@ export default function LoremClient() {
                       onCheckedChange={(checked) => setStartWithLorem(checked === true)}
                     />
                     <Label htmlFor="start-with-lorem" className="text-sm">
-                      Start with "Lorem ipsum..."
+                      Start with &quot;Lorem ipsum...&quot;
                     </Label>
                   </div>
                 </div>

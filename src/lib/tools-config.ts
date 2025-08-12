@@ -1,4 +1,4 @@
-import { Hash, FileText, Key, FileDown, Shield, Link, Palette, Clock, Type } from "lucide-react";
+import { Hash, FileText, Key, FileDown, Shield, Link, Palette, Clock, Type, Eye } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 export interface ToolConfig {
@@ -121,6 +121,18 @@ export const toolsConfig: ToolConfig[] = [
       title: "Lorem Ipsum Generator - Create Placeholder Text",
       description: "Generate Lorem Ipsum placeholder text online. Create custom paragraphs, words, and sentences for your design mockups and layouts. Free Lorem Ipsum text generator.",
       keywords: ["lorem ipsum", "placeholder text", "dummy text", "text generator", "lorem ipsum generator", "design mockup", "placeholder content", "filler text", "sample text"]
+    }
+  },
+  {
+    id: "markdown",
+    title: "Markdown Preview",
+    description: "Preview and format markdown with live rendering and prettier",
+    icon: Eye,
+    href: "/tools/markdown",
+    seo: {
+      title: "Markdown Preview - Live Markdown Editor and Renderer",
+      description: "Live markdown preview and editor with formatting support. Preview markdown with syntax highlighting, prettier formatting, and real-time rendering. Free markdown editor tool.",
+      keywords: ["markdown", "markdown preview", "markdown editor", "live preview", "markdown formatter", "prettier", "markdown renderer", "md preview", "markdown parser"]
     }
   }
 ];
