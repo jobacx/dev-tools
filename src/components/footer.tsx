@@ -8,7 +8,7 @@ export default function Footer() {
           <p className="text-sm text-muted-foreground">
             Created with ❤️ by{" "}
             <a 
-              href="https://github.com/jobacx" 
+              href="https://jobacx.vercel.app" 
               target="_blank" 
               rel="noopener noreferrer"
               className="font-medium text-foreground hover:underline"
