@@ -1,4 +1,4 @@
-import { Hash, FileText, Key, FileDown } from "lucide-react";
+import { Hash, FileText, Key, FileDown, Shield } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 export interface ToolConfig {
@@ -37,6 +37,13 @@ export const toolsConfig: ToolConfig[] = [
     description: "Convert Google Drive sharing links to direct download links",
     icon: FileDown,
     href: "/tools/google-drive"
+  },
+  {
+    id: "password",
+    title: "Password Generator",
+    description: "Generate secure, customizable passwords with advanced options",
+    icon: Shield,
+    href: "/tools/password"
   }
 ];
 
