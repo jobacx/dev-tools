@@ -100,7 +100,7 @@ src/
 Future tools and features planned:
 
 - [x] **URL Encoder/Decoder** - Encode and decode URLs and query parameters
-- [ ] **Color Converter** - Convert between different color formats (HEX, RGB, HSL, etc.)
+- [x] **Color Converter** - Convert between different color formats (HEX, RGB, HSL, etc.)
 - [ ] **JSON Formatter/Validator** - Format, validate, and minify JSON
 - [ ] **Hash Generator** - Generate MD5, SHA1, SHA256, and other hashes
 - [ ] **QR Code Generator** - Create QR codes for text, URLs, and data

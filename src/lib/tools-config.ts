@@ -1,4 +1,4 @@
-import { Hash, FileText, Key, FileDown, Shield, Link } from "lucide-react";
+import { Hash, FileText, Key, FileDown, Shield, Link, Palette } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 export interface ToolConfig {
@@ -85,6 +85,18 @@ export const toolsConfig: ToolConfig[] = [
       title: "URL Encoder/Decoder - Online URL Encoding Tool",
       description: "Free online URL encoder and decoder. Convert text to URL-safe format and decode URL-encoded strings. Essential tool for web developers and API integration.",
       keywords: ["url encoder", "url decoder", "percent encoding", "url encoding", "uri encoding", "web development", "url converter", "percent decode"]
+    }
+  },
+  {
+    id: "color",
+    title: "Color Converter",
+    description: "Convert between different color formats (HEX, RGB, HSL, etc.)",
+    icon: Palette,
+    href: "/tools/color",
+    seo: {
+      title: "Color Converter - Convert HEX, RGB, HSL Color Formats",
+      description: "Free online color converter tool. Convert between HEX, RGB, HSL, and other color formats. Perfect for web developers, designers, and digital artists.",
+      keywords: ["color converter", "hex to rgb", "rgb to hsl", "color picker", "color format", "hex color", "rgb color", "hsl color", "color tool", "web colors"]
     }
   }
 ];
