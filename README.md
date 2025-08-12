@@ -99,16 +99,16 @@ src/
 
 Future tools and features planned:
 
-- **URL Encoder/Decoder** - Encode and decode URLs and query parameters
-- **Color Converter** - Convert between different color formats (HEX, RGB, HSL, etc.)
-- **JSON Formatter/Validator** - Format, validate, and minify JSON
-- **Hash Generator** - Generate MD5, SHA1, SHA256, and other hashes
-- **QR Code Generator** - Create QR codes for text, URLs, and data
-- **Regular Expression Tester** - Test and debug regex patterns
-- **SQL Formatter** - Format and beautify SQL queries
-- **XML/HTML Formatter** - Format and validate XML/HTML
-- **Timestamp Converter** - Convert between different timestamp formats
-- **Lorem Ipsum Generator** - Generate placeholder text
+- [x] **URL Encoder/Decoder** - Encode and decode URLs and query parameters
+- [ ] **Color Converter** - Convert between different color formats (HEX, RGB, HSL, etc.)
+- [ ] **JSON Formatter/Validator** - Format, validate, and minify JSON
+- [ ] **Hash Generator** - Generate MD5, SHA1, SHA256, and other hashes
+- [ ] **QR Code Generator** - Create QR codes for text, URLs, and data
+- [ ] **Regular Expression Tester** - Test and debug regex patterns
+- [ ] **SQL Formatter** - Format and beautify SQL queries
+- [ ] **XML/HTML Formatter** - Format and validate XML/HTML
+- [ ] **Timestamp Converter** - Convert between different timestamp formats
+- [ ] **Lorem Ipsum Generator** - Generate placeholder text
 
 ## 🤝 Contributing
 

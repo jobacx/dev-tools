@@ -1,4 +1,4 @@
-import { Hash, FileText, Key, FileDown, Shield } from "lucide-react";
+import { Hash, FileText, Key, FileDown, Shield, Link } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 export interface ToolConfig {
@@ -73,6 +73,18 @@ export const toolsConfig: ToolConfig[] = [
       title: "Password Generator - Create Strong Secure Passwords",
       description: "Generate strong, secure passwords with customizable options. Create random passwords with numbers, symbols, uppercase, lowercase letters. Free password generator tool.",
       keywords: ["password generator", "strong password", "secure password", "random password", "password creator", "password maker", "cybersecurity", "password strength"]
+    }
+  },
+  {
+    id: "url",
+    title: "URL Encoder/Decoder",
+    description: "Encode and decode URLs and URL components for web development",
+    icon: Link,
+    href: "/tools/url",
+    seo: {
+      title: "URL Encoder/Decoder - Online URL Encoding Tool",
+      description: "Free online URL encoder and decoder. Convert text to URL-safe format and decode URL-encoded strings. Essential tool for web developers and API integration.",
+      keywords: ["url encoder", "url decoder", "percent encoding", "url encoding", "uri encoding", "web development", "url converter", "percent decode"]
     }
   }
 ];
