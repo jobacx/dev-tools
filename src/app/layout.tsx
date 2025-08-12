@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_URL || 'https://dev-tools.vercel.app'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_URL || 'https://devtools-jbacule.vercel.app'),
   alternates: {
     canonical: '/',
   },

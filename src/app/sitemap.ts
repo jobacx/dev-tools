@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { toolsConfig } from '@/lib/tools-config'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_URL || 'https://dev-tools.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_URL || 'https://devtools-jbacule.vercel.app'
 
   // Static pages
   const staticPages = [

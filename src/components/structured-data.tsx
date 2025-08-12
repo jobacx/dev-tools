@@ -6,7 +6,7 @@ interface StructuredDataProps {
 }
 
 export default function StructuredData({ type, toolId }: StructuredDataProps) {
-  const baseUrl = process.env.NEXT_PUBLIC_URL || 'https://dev-tools.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_URL || 'https://devtools-jbacule.vercel.app';
 
   if (type === 'homepage') {
     const homepageData = {
