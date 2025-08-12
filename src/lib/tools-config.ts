@@ -1,4 +1,4 @@
-import { Hash, FileText, Key, FileDown, Shield, Link, Palette, Clock } from "lucide-react";
+import { Hash, FileText, Key, FileDown, Shield, Link, Palette, Clock, Type } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 export interface ToolConfig {
@@ -109,6 +109,18 @@ export const toolsConfig: ToolConfig[] = [
       title: "Timestamp Converter - Unix Timestamp to Date Converter",
       description: "Convert Unix timestamps to human-readable dates and dates to Unix timestamps. Real-time timestamp converter with multiple formats and timezone support.",
       keywords: ["timestamp converter", "unix timestamp", "epoch time", "date converter", "timestamp to date", "unix time", "epoch converter", "time converter", "timestamp tool"]
+    }
+  },
+  {
+    id: "lorem",
+    title: "Lorem Ipsum Generator",
+    description: "Generate placeholder text for your designs and layouts",
+    icon: Type,
+    href: "/tools/lorem",
+    seo: {
+      title: "Lorem Ipsum Generator - Create Placeholder Text",
+      description: "Generate Lorem Ipsum placeholder text online. Create custom paragraphs, words, and sentences for your design mockups and layouts. Free Lorem Ipsum text generator.",
+      keywords: ["lorem ipsum", "placeholder text", "dummy text", "text generator", "lorem ipsum generator", "design mockup", "placeholder content", "filler text", "sample text"]
     }
   }
 ];
