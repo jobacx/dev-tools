@@ -1,17 +1,19 @@
 "use client";
 
-import { ChevronDown, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 import {
   CommandDialog,
   CommandEmpty,
@@ -90,24 +92,31 @@ export default function ToolsLayout({
                 </Button>
               </div>
               
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="outline" className="flex items-center gap-2">
-                    Tools
-                    <ChevronDown className="h-4 w-4" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-56">
-                  {tools.map((tool) => (
-                    <DropdownMenuItem key={tool.title} asChild>
-                      <Link href={tool.url} className="flex items-center gap-2">
-                        <tool.icon className="h-4 w-4" />
-                        {tool.title}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
+              <NavigationMenu viewport={false} className="hidden md:flex">
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger>Tools</NavigationMenuTrigger>
+                    <NavigationMenuContent className="right-0 left-auto">
+                      <div className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                        {tools.map((tool) => (
+                          <NavigationMenuLink key={tool.title} asChild>
+                            <Link
+                              href={tool.url}
+                              className="flex items-start gap-3 rounded-md p-3 hover:bg-accent hover:text-accent-foreground transition-colors"
+                            >
+                              <tool.icon className="h-5 w-5 text-muted-foreground mt-0.5" />
+                              <div className="flex flex-col gap-1">
+                                <span className="text-sm font-medium leading-none">{tool.title}</span>
+                                <span className="text-xs text-muted-foreground line-clamp-2">{tool.description}</span>
+                              </div>
+                            </Link>
+                          </NavigationMenuLink>
+                        ))}
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
               <ThemeToggle />
             </nav>
           </div>

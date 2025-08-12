@@ -95,6 +95,20 @@ src/
 - `pnpm start` - Start production server  
 - `pnpm lint` - Run ESLint
 
+## AI Prompts for Generating New Feature
+```
+please create a new feature tools in this project.
+
+name:
+
+requirements:
+- include analyzing of existing tools for design ui pattern
+- adding of new config in @tools-config.ts
+
+functionalities: 
+- 
+```
+
 ## 🎯 Roadmap
 
 Future tools and features planned:
@@ -107,7 +121,7 @@ Future tools and features planned:
 - [ ] **Regular Expression Tester** - Test and debug regex patterns
 - [ ] **SQL Formatter** - Format and beautify SQL queries
 - [ ] **XML/HTML Formatter** - Format and validate XML/HTML
-- [ ] **Timestamp Converter** - Convert between different timestamp formats
+- [x] **Timestamp Converter** - Convert between different timestamp formats
 - [ ] **Lorem Ipsum Generator** - Generate placeholder text
 
 ## 🤝 Contributing

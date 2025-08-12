@@ -1,4 +1,4 @@
-import { Hash, FileText, Key, FileDown, Shield, Link, Palette } from "lucide-react";
+import { Hash, FileText, Key, FileDown, Shield, Link, Palette, Clock } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 export interface ToolConfig {
@@ -98,6 +98,18 @@ export const toolsConfig: ToolConfig[] = [
       description: "Free online color converter tool. Convert between HEX, RGB, HSL, and other color formats. Perfect for web developers, designers, and digital artists.",
       keywords: ["color converter", "hex to rgb", "rgb to hsl", "color picker", "color format", "hex color", "rgb color", "hsl color", "color tool", "web colors"]
     }
+  },
+  {
+    id: "timestamp",
+    title: "Timestamp Converter",
+    description: "Convert Unix timestamps to human-readable dates and vice versa",
+    icon: Clock,
+    href: "/tools/timestamp",
+    seo: {
+      title: "Timestamp Converter - Unix Timestamp to Date Converter",
+      description: "Convert Unix timestamps to human-readable dates and dates to Unix timestamps. Real-time timestamp converter with multiple formats and timezone support.",
+      keywords: ["timestamp converter", "unix timestamp", "epoch time", "date converter", "timestamp to date", "unix time", "epoch converter", "time converter", "timestamp tool"]
+    }
   }
 ];
 
@@ -105,6 +117,7 @@ export const toolsConfig: ToolConfig[] = [
 export const getToolsForNavigation = () => {
   return toolsConfig.map(tool => ({
     title: tool.title,
+    description: tool.description,
     url: tool.href,
     icon: tool.icon
   }));
