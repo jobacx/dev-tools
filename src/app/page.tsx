@@ -5,37 +5,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Search, Hash, FileText, Key } from "lucide-react";
+import { Search } from "lucide-react";
 import Footer from "@/components/footer";
-
-const tools = [
-  {
-    id: "bcrypt",
-    title: "Bcrypt Hash Generator",
-    description: "Generate and verify bcrypt hashes for password security",
-    icon: Hash,
-    href: "/tools/bcrypt"
-  },
-  {
-    id: "base64",
-    title: "Base64 Encoder/Decoder",
-    description: "Encode and decode text or data using Base64 encoding",
-    icon: FileText,
-    href: "/tools/base64"
-  },
-  {
-    id: "jwt",
-    title: "JWT Encoder/Decoder",
-    description: "Encode, decode, and verify JSON Web Tokens",
-    icon: Key,
-    href: "/tools/jwt"
-  }
-];
+import { toolsConfig } from "@/lib/tools-config";
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredTools = tools.filter(tool =>
+  const filteredTools = toolsConfig.filter(tool =>
     tool.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     tool.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
