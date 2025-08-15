@@ -1,4 +1,4 @@
-import { Hash, FileText, Key, FileDown, Shield, Link, Palette, Clock, Type, Eye } from "lucide-react";
+import { Hash, FileText, Key, FileDown, Shield, Link, Palette, Clock, Type, Eye, QrCode } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 export interface ToolConfig {
@@ -133,6 +133,18 @@ export const toolsConfig: ToolConfig[] = [
       title: "Markdown Preview - Live Markdown Editor and Renderer",
       description: "Live markdown preview and editor with formatting support. Preview markdown with syntax highlighting, prettier formatting, and real-time rendering. Free markdown editor tool.",
       keywords: ["markdown", "markdown preview", "markdown editor", "live preview", "markdown formatter", "prettier", "markdown renderer", "md preview", "markdown parser"]
+    }
+  },
+  {
+    id: "qr-code",
+    title: "QR Code Generator",
+    description: "Generate customizable QR codes with various design and download options",
+    icon: QrCode,
+    href: "/tools/qr-code",
+    seo: {
+      title: "QR Code Generator - Create Custom QR Codes Online",
+      description: "Free online QR code generator with customization options. Create QR codes for URLs, text, WiFi, contact info, and more. Download as PNG, SVG, or PDF with custom colors and sizes.",
+      keywords: ["qr code generator", "qr code creator", "custom qr code", "qr code online", "generate qr code", "qr code maker", "barcode generator", "qr scanner", "wifi qr code", "vcard qr code"]
     }
   }
 ];
