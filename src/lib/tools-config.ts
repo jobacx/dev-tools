@@ -1,4 +1,4 @@
-import { Hash, FileText, Key, FileDown, Shield, Link, Palette, Clock, Type, Eye, QrCode } from "lucide-react";
+import { Hash, FileText, Key, FileDown, Shield, Link, Palette, Clock, Type, Eye, QrCode, Binary, FileCode } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 export interface ToolConfig {
@@ -145,6 +145,30 @@ export const toolsConfig: ToolConfig[] = [
       title: "QR Code Generator - Create Custom QR Codes Online",
       description: "Free online QR code generator with customization options. Create QR codes for URLs, text, WiFi, contact info, and more. Download as PNG, SVG, or PDF with custom colors and sizes.",
       keywords: ["qr code generator", "qr code creator", "custom qr code", "qr code online", "generate qr code", "qr code maker", "barcode generator", "qr scanner", "wifi qr code", "vcard qr code"]
+    }
+  },
+  {
+    id: "hash",
+    title: "Hash Generator",
+    description: "Generate cryptographic hashes using various algorithms (MD5, SHA-1, SHA-256, SHA-512, SHA-3)",
+    icon: Binary,
+    href: "/tools/hash",
+    seo: {
+      title: "Hash Generator - Create Cryptographic Hashes Online",
+      description: "Free online hash generator tool. Create MD5, SHA-1, SHA-256, SHA-512, and SHA-3 hashes from text or hexadecimal data. Secure hash function calculator for developers and security professionals.",
+      keywords: ["hash generator", "md5 hash", "sha256 hash", "sha512 hash", "sha3 hash", "cryptographic hash", "hash calculator", "hash function", "checksum generator", "data integrity", "hash online", "crypto hash"]
+    }
+  },
+  {
+    id: "json",
+    title: "JSON Formatter/Validator",
+    description: "Format, validate, and minify JSON data with syntax highlighting and error detection",
+    icon: FileCode,
+    href: "/tools/json",
+    seo: {
+      title: "JSON Formatter/Validator - Format, Validate & Minify JSON Online",
+      description: "Free online JSON formatter and validator tool. Format JSON with proper indentation, validate JSON syntax, and minify JSON for production. Essential tool for developers working with JSON data.",
+      keywords: ["json formatter", "json validator", "json minifier", "json prettifier", "json parser", "format json", "validate json", "minify json", "json syntax", "json online", "json tool", "pretty print json"]
     }
   }
 ];
